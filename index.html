@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mary Okpala — DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="scanlines"></div>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="prompt">~/</span><span class="nav-name">mary-okpala</span><span class="cursor-blink">_</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero"        class="nav-link">home</a></li>
+      <li><a href="#about"       class="nav-link">about</a></li>
+      <li><a href="#skills"      class="nav-link">skills</a></li>
+      <li><a href="#experience"  class="nav-link">experience</a></li>
+      <li><a href="#services"    class="nav-link">services</a></li>
+      <li><a href="#projects"    class="nav-link">projects</a></li>
+      <li><a href="#contact"     class="nav-link">contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="menu">☰</button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       01 HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-name">Mary Okpala</h1>
+        <div class="hero-title-wrap">
+          <span class="hero-title-prefix">$ </span>
+          <span class="hero-title" id="typed-title"></span>
+          <span class="cursor-blink">_</span>
+        </div>
+        <p class="hero-summary">
+          I build the infrastructure that makes software delivery fast, reliable, and secure.
+          From automated CI/CD pipelines that enforce quality on every commit, to cloud environments
+          provisioned entirely from code, to Kubernetes platforms that deploy themselves — I work
+          across the full DevOps lifecycle and care deeply about doing it properly.
+        </p>
+        <div class="hero-badges">
+          <span class="badge green">● Open to opportunities</span>
+          <span class="badge">St. John's, Canada</span>
+          <span class="badge">Remote · Hybrid · On-site</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View my work</a>
+          <a href="#contact"  class="btn-ghost">Get in touch</a>
+          <a href="cv.pdf" download class="btn-ghost">
+            <span class="dl-icon">↓</span> Download CV
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-terminal">
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">bash — mary@devops ~</span>
+          </div>
+          <div class="terminal-body">
+            <div class="tl"><span class="ps">$</span> <span class="tc">cat profile.txt</span></div>
+            <div class="to">
+              <p><span class="tk">name</span>     <span class="tv">Mary Okpala</span></p>
+              <p><span class="tk">role</span>     <span class="tv">DevOps · Platform · SRE Engineer</span></p>
+              <p><span class="tk">exp</span>      <span class="tv">4 years</span></p>
+              <p><span class="tk">cloud</span>    <span class="tv">AWS · Azure</span></p>
+              <p><span class="tk">status</span>   <span class="tv open">open to work</span></p>
+            </div>
+            <div class="tl"><span class="ps">$</span> <span class="tc">kubectl get nodes</span></div>
+            <div class="to">
+              <p><span class="tk">NAME</span>          <span class="tv">STATUS</span>   <span class="tv">ROLES</span></p>
+              <p><span class="tk">vigil-node</span>    <span class="tv open">Ready</span>    <span class="tv">control-plane</span></p>
+            </div>
+            <div class="tl"><span class="ps">$</span> <span class="tc">terraform show | grep status</span></div>
+            <div class="to">
+              <p><span class="tv open"># 16 resources. All healthy.</span></p>
+            </div>
+            <div class="tl"><span class="ps">$</span> <span class="cursor-blink">_</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <a href="#about" class="scroll-down">↓ scroll</a>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       02 ABOUT
+  ══════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-label">// 02 — about me</div>
+      <h2 class="section-title">The person behind the pipelines</h2>
+
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p class="about-p">
+            I'm a DevOps Engineer with years of experience building automated, observable, and resilient infrastructure. First as a System Administrator and Site Reliability Engineer at Access Bank, and now working hybrid with Acada eLearningTech, where I completed my Master's degree in Mathematical/Theoretical Physics at Memorial University.
+          </p>
+          <p class="about-p">
+            My journey into DevOps started from a fascination with how software actually reaches users, a deep curiosity about how applications are built. I wanted to understand what happens in the background — the invisible work that makes deployments reliable, systems observable, and infrastructure reproducible.
+          </p>
+          <p class="about-p">
+            I've always believed that the best infrastructure is the kind you never have to think about — because it just works.
+          </p>
+          <p class="about-p">
+            I thrive in environments where automation, continuous improvement, and engineering rigor drive real business impact. I care deeply about documentation, clean code, and building systems that other engineers can easily understand and build on.
+          </p>
+          <p class="about-p">
+            Outside of work, I enjoy learning new things, spending time with friends, and breaking down complex concepts to make them accessible to others. It is rewarding when a concept clicks for someone or when knowledge solves a real problem.
+          </p>
+          <div class="about-facts">
+            <div class="fact"><span class="fact-val">3+</span><span class="fact-label">Years experience</span></div>
+            <div class="fact"><span class="fact-val">4</span><span class="fact-label">Cloud platforms</span></div>
+            <div class="fact"><span class="fact-val">3</span><span class="fact-label">Portfolio projects</span></div>
+            <div class="fact"><span class="fact-val">MSc</span><span class="fact-label">Memorial University</span></div>
+          </div>
+        </div>
+
+        <div class="about-card-col">
+          <div class="about-card">
+            <div class="about-card-header">// what I believe in</div>
+            <ul class="belief-list">
+              <li><span class="arrow">→</span> Infrastructure must be code. If it was clicked into existence, it will drift into chaos.</li>
+              <li><span class="arrow">→</span> Every pipeline should enforce quality and security, not just move fast.</li>
+              <li><span class="arrow">→</span> Observability is not optional. You cannot fix what you cannot see.</li>
+              <li><span class="arrow">→</span> Documentation is engineering work. It is not optional and it is not someone else's job.</li>
+              <li><span class="arrow">→</span> Security belongs in the pipeline from day one, not bolted on at the end.</li>
+              <li><span class="arrow">→</span> The best infrastructure is invisible. It just works, reliably, every time.</li>
+              <li><span class="arrow">→</span> Automation is not laziness. It is the highest form of engineering discipline.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       03 SKILLS
+  ══════════════════════════════════════ -->
+  <section class="section alt" id="skills">
+    <div class="section-inner">
+      <div class="section-label">// 03 — qualifications & skills</div>
+      <h2 class="section-title">Technical expertise</h2>
+
+      <div class="skills-categories">
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">CI/CD & Automation</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Jenkins</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">GitHub Actions</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Azure DevOps</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Maven / Gradle</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">Infrastructure as Code</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Terraform</span><span class="sb-pct">92%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Ansible</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">CloudFormation</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">Containers & Orchestration</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Docker</span><span class="sb-pct">92%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Kubernetes / k3s</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Helm</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">ArgoCD / GitOps</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">Cloud Platforms</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">AWS</span><span class="sb-pct">92%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Azure</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">Observability & Security</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Prometheus · Grafana</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">SonarQube</span><span class="sb-pct">92%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Trivy</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Nexus Repository</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">Languages & Tools</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Bash / Shell</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Python</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Git / GitHub / GitLab</span><span class="sb-pct">90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span class="sb-name">Linux / Ubuntu</span><span class="sb-pct">92%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="92"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       04 EXPERIENCE
+  ══════════════════════════════════════ -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-label">// 04 — experience & education</div>
+      <h2 class="section-title">Where I've worked and learned</h2>
+
+      <div class="exp-grid">
+        <div class="exp-col">
+          <div class="exp-col-title">// work experience</div>
+
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <div class="tl-period">Jun 2024 — Present</div>
+                <div class="tl-role">DevOps Engineer — Automation & AWS</div>
+                <div class="tl-company">Acada eLearningTech · Hybrid</div>
+                <ul class="tl-bullets">
+                  <li>Designed and maintained CI/CD pipelines using Jenkins and GitHub Actions, reducing manual deployment steps and enabling consistent automated delivery</li>
+                  <li>Automated cloud infrastructure provisioning with Terraform and Ansible across Azure environments</li>
+                  <li>Deployed and managed containerised workloads on AKS using Docker and Helm</li>
+                  <li>Integrated Trivy and SonarQube into pipelines, strengthening DevSecOps posture</li>
+                  <li>Implemented observability stacks with Prometheus, Grafana, and Azure Monitor</li>
+                </ul>
+                <div class="tl-tags">
+                  <span>Jenkins</span><span>Terraform</span><span>Ansible</span><span>AKS</span><span>Docker</span><span>Prometheus</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <div class="tl-period">Jan 2023 — May 2024</div>
+                <div class="tl-role">Site Reliability Engineer</div>
+                <div class="tl-company">Access Bank PLC · Remote</div>
+                <ul class="tl-bullets">
+                  <li>Built and maintained CI/CD pipelines for microservices deployed on Azure Kubernetes Service</li>
+                  <li>Automated infrastructure provisioning and configuration using Terraform, Ansible, and PowerShell</li>
+                  <li>Designed fault-tolerant, scalable cloud infrastructure for high-availability banking applications</li>
+                  <li>Implemented GitOps and DevSecOps practices using ArgoCD, Trivy, and SonarQube</li>
+                  <li>Performed incident response, root cause analysis, and reliability improvements for production systems</li>
+                </ul>
+                <div class="tl-tags">
+                  <span>AKS</span><span>ArgoCD</span><span>Terraform</span><span>Ansible</span><span>SonarQube</span><span>Grafana</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-col">
+          <div class="exp-col-title">// education</div>
+
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <div class="tl-dot edu"></div>
+              <div class="tl-content">
+                <div class="tl-period">Jan 2023 — Dec 2024</div>
+                <div class="tl-role">Master's Degree</div>
+                <div class="tl-company">Memorial University of Newfoundland · St. John's, Canada</div>
+              </div>
+            </div>
+
+            <div class="tl-item reveal">
+              <div class="tl-dot edu"></div>
+              <div class="tl-content">
+                <div class="tl-period">Nov 2017 — Dec 2021</div>
+                <div class="tl-role">Bachelor's Degree</div>
+                <div class="tl-company">Anambra State University · Nigeria</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-col-title" style="margin-top:2.5rem">// certifications</div>
+          <div class="cert-list">
+            <div class="cert-item reveal">
+              <div class="cert-icon">✓</div>
+              <div class="cert-info">
+                <div class="cert-name">AI for Data Engineering</div>
+                <div class="cert-issuer">techNL · Issued Apr 2026</div>
+              </div>
+            </div>
+            <div class="cert-item reveal upcoming">
+              <div class="cert-icon">◌</div>
+              <div class="cert-info">
+                <div class="cert-name">AWS Certified Cloud Practitioner</div>
+                <div class="cert-issuer">In progress</div>
+              </div>
+            </div>
+            <div class="cert-item reveal upcoming">
+              <div class="cert-icon">◌</div>
+              <div class="cert-info">
+                <div class="cert-name">HashiCorp Terraform Associate</div>
+                <div class="cert-issuer">In progress</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-download reveal">
+            <div class="cv-label">// download my CV</div>
+            <a href="cv.pdf" download class="btn-primary cv-btn">
+              <span>↓</span> Download CV (PDF)
+            </a>
+            <p class="cv-note">Full work history, skills, and references available on request.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       05 SERVICES
+  ══════════════════════════════════════ -->
+  <section class="section alt" id="services">
+    <div class="section-inner">
+      <div class="section-label">// 05 — services</div>
+      <h2 class="section-title">What I can do for you</h2>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon">⚙</div>
+          <h3 class="service-title">CI/CD Pipeline Design & Implementation</h3>
+          <p class="service-desc">Design and build automated delivery pipelines that take code from commit to production reliably. Every pipeline I build includes automated testing, code quality gates, security scanning, and artifact management — so your team ships faster without compromising quality.</p>
+          <ul class="service-list">
+            <li>Jenkins · GitHub Actions · Azure DevOps pipelines</li>
+            <li>SonarQube quality gates and code coverage enforcement</li>
+            <li>Trivy security scanning at filesystem and image level</li>
+            <li>Nexus artifact versioning and storage</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">☁</div>
+          <h3 class="service-title">Cloud Infrastructure Provisioning</h3>
+          <p class="service-desc">Provision and manage cloud infrastructure entirely from code — no console clicking, no configuration drift, no surprises. I design multi-tier architectures on AWS and Azure with proper network segmentation, security groups, and remote state management.</p>
+          <ul class="service-list">
+            <li>Terraform modules for reusable, versioned infrastructure</li>
+            <li>AWS VPC, EC2, S3, RDS, IAM — fully automated</li>
+            <li>S3 remote state with DynamoDB locking for team safety</li>
+            <li>Ansible role-based server configuration management</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">⎈</div>
+          <h3 class="service-title">Kubernetes & Container Orchestration</h3>
+          <p class="service-desc">Deploy and manage containerised applications on Kubernetes with proper resource management, health probes, rolling updates, and GitOps-driven deployment. Your application stays up during deployments and self-heals when things go wrong.</p>
+          <ul class="service-list">
+            <li>Kubernetes cluster setup and workload management</li>
+            <li>Helm chart development and deployment</li>
+            <li>ArgoCD GitOps — Git as the single source of truth</li>
+            <li>Zero-downtime rolling updates with readiness probes</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">◉</div>
+          <h3 class="service-title">Monitoring & Observability</h3>
+          <p class="service-desc">Set up comprehensive monitoring so you always know what your systems are doing. I implement metrics collection, custom dashboards, and intelligent alerting — so your team gets notified before users notice a problem.</p>
+          <ul class="service-list">
+            <li>Prometheus metrics collection and custom alerting rules</li>
+            <li>Grafana dashboards for infrastructure and application health</li>
+            <li>AlertManager routing for incident notification</li>
+            <li>Azure Monitor and Log Analytics integration</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🔒</div>
+          <h3 class="service-title">DevSecOps Integration</h3>
+          <p class="service-desc">Shift security left — integrate security checks directly into your delivery pipeline so vulnerabilities are caught before they reach production. Security becomes part of the process, not a gate at the end.</p>
+          <ul class="service-list">
+            <li>Container image vulnerability scanning with Trivy</li>
+            <li>Static code analysis and quality enforcement with SonarQube</li>
+            <li>Secrets detection in source code and containers</li>
+            <li>Least-privilege IAM and security group design</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📋</div>
+          <h3 class="service-title">DevOps Consulting & Documentation</h3>
+          <p class="service-desc">Review your existing pipelines and infrastructure, identify bottlenecks and risks, and provide a clear roadmap for improvement. Every engagement includes full documentation so your team can maintain and extend what I build.</p>
+          <ul class="service-list">
+            <li>Pipeline and infrastructure audit and optimisation</li>
+            <li>Architecture documentation and runbooks</li>
+            <li>Team onboarding and knowledge transfer</li>
+            <li>Best practices review and recommendations</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       06 PROJECTS
+  ══════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-label">// 06 — projects</div>
+      <h2 class="section-title">Production-grade work</h2>
+      <p class="section-sub">Three end-to-end DevOps projects built from scratch — each one solving a real engineering problem with production-quality code, documentation, and architecture.</p>
+
+      <!-- CRUCIBLE -->
+      <div class="project-block reveal" id="crucible">
+        <div class="project-header">
+          <div class="project-num">01</div>
+          <div class="project-header-text">
+            <h3 class="project-name">Crucible</h3>
+            <p class="project-tagline">Enterprise CI/CD pipeline — code commit to live deployment, automatically.</p>
+          </div>
+          <div class="project-badges">
+            <span class="pbadge blue">CI/CD</span>
+            <span class="pbadge">DevSecOps</span>
+            <span class="live-badge">● Live</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-desc-col">
+            <p class="project-desc">Every push to main triggers a fully automated pipeline: Maven compiles and tests the application, SonarQube enforces code quality and aborts if standards aren't met, Trivy scans for CVEs at both the filesystem and container image level, Nexus stores versioned artifacts, Docker builds and tags the image, and Tomcat deploys the application. Prometheus and Grafana provide real-time pipeline observability throughout.</p>
+            <div class="pipeline-flow">
+              <span class="ps">Checkout</span><span class="pa">→</span>
+              <span class="ps">Build</span><span class="pa">→</span>
+              <span class="ps">Tests</span><span class="pa">→</span>
+              <span class="ps quality">Quality Gate</span><span class="pa">→</span>
+              <span class="ps security">Trivy Scan</span><span class="pa">→</span>
+              <span class="ps">Nexus</span><span class="pa">→</span>
+              <span class="ps deploy">Deploy</span>
+            </div>
+            <div class="project-highlights">
+              <div class="ph-title">// key highlights</div>
+              <ul>
+                <li>Pipeline aborts automatically if SonarQube quality gate fails — bad code never reaches production</li>
+                <li>Two-layer Trivy scanning — filesystem before build, container image after build</li>
+                <li>JaCoCo coverage reports fed directly into SonarQube quality gate</li>
+                <li>All services containerised with Docker Compose — fully reproducible environment</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-side">
+            <div class="project-stack-title">// stack</div>
+            <div class="project-stack-tags">
+              <span>Jenkins</span><span>Maven</span><span>SonarQube</span><span>Trivy</span>
+              <span>Nexus</span><span>Docker</span><span>Tomcat</span><span>Prometheus</span>
+              <span>Grafana</span><span>Spring Boot</span><span>AWS EC2</span>
+            </div>
+            <a href="https://github.com/MaryOkpala/crucible" target="_blank" class="project-link">
+              → View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- STRATUM -->
+      <div class="project-block reveal alt-block" id="stratum">
+        <div class="project-header">
+          <div class="project-num">02</div>
+          <div class="project-header-text">
+            <h3 class="project-name">Stratum</h3>
+            <p class="project-tagline">Multi-tier AWS infrastructure provisioned from zero — zero console clicks.</p>
+          </div>
+          <div class="project-badges">
+            <span class="pbadge amber">IaC</span>
+            <span class="pbadge">AWS</span>
+            <span class="live-badge">● Live</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-desc-col">
+            <p class="project-desc">A single terraform apply provisions a complete AWS environment: VPC with public and private subnets, Internet Gateway, NAT Gateway, route tables, least-privilege security groups, and three EC2 instances across tiers. Ansible then SSHes into each server and applies role-based configuration — OS hardening, firewall rules, Nginx reverse proxy on the web tier, Java and Tomcat on the private app tier. Remote state in S3 with DynamoDB locking makes it safe for team use.</p>
+            <div class="project-highlights">
+              <div class="ph-title">// key highlights</div>
+              <ul>
+                <li>Modular Terraform — networking, compute, security, storage as separate reusable modules</li>
+                <li>App server has no public IP — only reachable through Nginx on the web tier</li>
+                <li>Ansible roles are idempotent — run ten times, result is always identical</li>
+                <li>All resources tagged with Project, Environment, ManagedBy, Owner</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-side">
+            <div class="project-stack-title">// stack</div>
+            <div class="project-stack-tags">
+              <span>Terraform</span><span>Ansible</span><span>AWS VPC</span><span>EC2</span>
+              <span>S3</span><span>DynamoDB</span><span>Nginx</span><span>Tomcat</span><span>Java 17</span>
+            </div>
+            <a href="https://github.com/MaryOkpala/stratum" target="_blank" class="project-link">
+              → View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIGIL -->
+      <div class="project-block reveal" id="vigil">
+        <div class="project-header">
+          <div class="project-num">03</div>
+          <div class="project-header-text">
+            <h3 class="project-name">Vigil</h3>
+            <p class="project-tagline">Cloud-native GitOps platform — push a commit, ArgoCD deploys it automatically.</p>
+          </div>
+          <div class="project-badges">
+            <span class="pbadge green">GitOps</span>
+            <span class="pbadge">Kubernetes</span>
+            <span class="live-badge">● Live</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-desc-col">
+            <p class="project-desc">A Spring Boot application running on k3s Kubernetes with full GitOps — ArgoCD watches the GitHub repository and automatically syncs every change to the cluster with zero-downtime rolling updates. Prometheus scrapes application and cluster metrics every 15 seconds. Grafana provides dashboards for cluster health, node resources, and workload performance. Custom AlertManager rules fire when pods crash, memory spikes, or the application goes down.</p>
+            <div class="project-highlights">
+              <div class="ph-title">// key highlights</div>
+              <ul>
+                <li>GitOps — Git is the single source of truth, ArgoCD self-heals any cluster drift automatically</li>
+                <li>Zero-downtime rolling updates: maxSurge 1, maxUnavailable 0</li>
+                <li>Readiness + liveness probes — traffic only routes to healthy pods</li>
+                <li>Custom PrometheusRules for app-specific alerting</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-side">
+            <div class="project-stack-title">// stack</div>
+            <div class="project-stack-tags">
+              <span>k3s</span><span>ArgoCD</span><span>Helm</span><span>Prometheus</span>
+              <span>Grafana</span><span>AlertManager</span><span>Spring Boot</span><span>Docker</span><span>AWS EC2</span>
+            </div>
+            <a href="https://github.com/MaryOkpala/vigil" target="_blank" class="project-link">
+              → View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       07 CONTACT
+  ══════════════════════════════════════ -->
+  <section class="section alt" id="contact">
+    <div class="section-inner">
+      <div class="section-label">// 07 — contact</div>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-sub">I'm actively looking for DevOps, Cloud Engineering, SRE, or Platform Engineering roles. Whether you have an opportunity, want to collaborate, or just want to talk DevOps — reach out.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-status">
+            <span class="cs-dot"></span>
+            <span class="cs-text">Available for new opportunities</span>
+          </div>
+          <div class="contact-channels">
+            <a href="https://www.linkedin.com/in/mary-okpalaa" target="_blank" class="channel">
+              <span class="ch-label">LinkedIn</span>
+              <span class="ch-val">linkedin.com/in/mary-okpalaa</span>
+            </a>
+            <a href="https://github.com/MaryOkpala" target="_blank" class="channel">
+              <span class="ch-label">GitHub</span>
+              <span class="ch-val">github.com/MaryOkpala</span>
+            </a>
+            <a href="https://github.com/MaryOkpala/crucible" target="_blank" class="channel">
+              <span class="ch-label">Crucible</span>
+              <span class="ch-val">github.com/MaryOkpala/crucible</span>
+            </a>
+            <a href="https://github.com/MaryOkpala/stratum" target="_blank" class="channel">
+              <span class="ch-label">Stratum</span>
+              <span class="ch-val">github.com/MaryOkpala/stratum</span>
+            </a>
+            <a href="https://github.com/MaryOkpala/vigil" target="_blank" class="channel">
+              <span class="ch-label">Vigil</span>
+              <span class="ch-val">github.com/MaryOkpala/vigil</span>
+            </a>
+          </div>
+          <div class="contact-note">
+            <div class="cn-title">// what I'm looking for</div>
+            <ul>
+              <li>→ Full-time DevOps / Cloud / SRE / Platform Engineer roles</li>
+              <li>→ Remote · Canada · Open to relocation</li>
+              <li>→ Teams that value automation, reliability, and engineering craft</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label class="form-label">// your name</label>
+              <input type="text" class="form-input" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">// your email</label>
+              <input type="email" class="form-input" placeholder="jane@company.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">// subject</label>
+              <input type="text" class="form-input" placeholder="DevOps Engineer role at Acme" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">// message</label>
+              <textarea class="form-input form-textarea" rows="5" placeholder="Hi Mary, I came across your projects..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send message →</button>
+            <div id="form-success" class="form-success hidden">
+              ✓ Message received. I'll respond within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="prompt">~/mary-okpala</span>
+        <span class="footer-sep">$</span>
+        <span class="footer-copy">Built with purpose · 2026</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/MaryOkpala" target="_blank">GitHub</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/in/mary-okpalaa" target="_blank">LinkedIn</a>
+        <span>·</span>
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
